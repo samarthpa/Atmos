@@ -1,0 +1,17 @@
+{
+  "hotels": {
+    "url": "https://app-pearl-sigma-59.vercel.app/data/hotels.json",
+    "sha256": "c0105aec7b9b751c1f72a06527cca855af46aa381c115e1aaf8794f4b5ead6e5",
+    "retrieved_at": "2026-11-10T03:04:30.512567+00:00"
+  },
+  "mcc_definitions": {
+    "url": "https://atmos-mcc-map.vercel.app/_next/static/chunks/158myu8e_yme3.js",
+    "sha256": "bf681d2661b4348d1983db19aee14291b9453ee7ddc24d2bc31ae98716af20a0",
+    "retrieved_at": "2026-11-10T03:04:30.531639+00:00"
+  },
+  "mcc_estimates": {
+    "url": "https://atmos-mcc-map.vercel.app/_next/static/chunks/158myu8e_yme3.js",
+    "sha256": "b87a180159b6c1c48013f2ed4cf53094a95688ebfaabe22d39b6aeac25dbf4da",
+    "retrieved_at": "2026-11-10T03:04:30.538653+00:00"
+  }
+}
