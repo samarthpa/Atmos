@@ -104,8 +104,9 @@ Property `source_payload` preserves these original source-reported attributes:
 `id` (OSM ID), `n` (name), `op` (operator), `hn`/`st` (house number/street), `ci`
 (city), `sa` (state), `co` (county), `pz` (postcode), `w` (website), `ph` (phone),
 `em` (email), `rm` (rooms), `sr` (stars), `la`/`lo` (coordinates). Missing values
-remain null; rooms and stars remain source strings. Country codes are left null
-because no explicit country field was supplied. OSM records can be inspected at
+remain null; rooms and stars remain source strings. The source has no country
+field, but the dataset covers US hotels only, so `country_code` is set to `US`
+(confirmed by the Atmos team, not derived from coordinates). OSM records can be inspected at
 `https://www.openstreetmap.org/<source_record_id>`.
 
 The original snapshot also preserves brand/parent-brand, chain tier, service

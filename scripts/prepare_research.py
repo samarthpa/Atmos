@@ -68,7 +68,8 @@ def prepare():
                     'em', 'rm', 'sr', 'la', 'lo']}
         properties.append(dict(source('hotels'), source_record_id=row['id'], name=row['n'],
             address=' '.join(str(row[k]) for k in ['hn', 'st'] if row[k]) or None,
-            city=row['ci'], operator_dataset=dataset if operator else None,
+            # The property map covers US hotels only (confirmed by the Atmos team).
+            city=row['ci'], country_code='US', operator_dataset=dataset if operator else None,
             operator_record_id=operator_id(operator) if operator else None,
             verification_status='unverified', source_payload=json.dumps(factual, ensure_ascii=False)))
     write(dataset, {'operators': [operators[k] for k in sorted(operators)], 'properties': properties})
